@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations;
 namespace Øvelse_2.Models
 {
     public class Kage
-    {
+    { //Model class for tabellen kage
         public int Id { get; set; }
         public string CakeName { get; set; }
         [DataType(DataType.Date)]

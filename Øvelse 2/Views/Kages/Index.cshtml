@@ -6,13 +6,13 @@
 
 <h1>Index</h1>
 
-<p>
+<p> @*Create knap bliver lavet*@
     <a asp-action="Create">Create New</a>
 </p>
 <table class="table">
-    <thead>
+    <thead> @*Tabel*@
         <tr>
-            <th>
+            <th> @*Kolonne navne bliver skrevet ind*@
                 @Html.DisplayNameFor(model => model.CakeName)
             </th>
             <th>
@@ -26,7 +26,7 @@
     </thead>
     <tbody>
 @foreach (var item in Model) {
-        <tr>
+        <tr> @*Laver en linje for hver item i tabellen*@
             <td>
                 @Html.DisplayFor(modelItem => item.CakeName)
             </td>
@@ -36,7 +36,7 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Price)
             </td>
-            <td>
+            <td> @*Kontrol over hver item*@
                 <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
                 <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
                 <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
